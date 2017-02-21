@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>WebSocket demo</title>
+
+      <link rel="stylesheet" href="./main.css">
+      <script src="./socket.js" charset="utf-8"></script>
+   </head>
+   <body>
+
+      <div class="container">
+         <h1>Assigment 3</h1>
+         <div> <!-- WebSockets -->
+            <h2>1. Web Sockets</h2>
+            <div id="chatbox"></div>
+            <div id="sendbox">
+               <div class="textbox">
+                  <input class="inputbox" type="text" id="text" value="" placeholder="Type text...">
+               </div>
+               <div class="buttonbox">
+                  <button class="submitbtn" id="sendtext" onclick="sendMessage()">Send</button>
+               </div>
+            </div>
+            <div id="status"></div>
+         </div>
+
+         <div> <!-- LocalStorage -->
+            <h2>2. Local Storage</h2>
+               <div class="textbox">
+                  <input class="inputbox" type="text" id="name" value="" placeholder="Type a name...">
+               </div>
+               <div class="buttonbox">
+                  <button class="submitbtn" id="savename" onclick="addPerson()">Save</button>
+               </div>
+            <div id="persons-list"></div>
+         </div>
+
+         <div> <!-- Audio/Video -->
+            <h2>3. Audio Element</h2>
+            <audio id="audio" src="http://stream.basso.fi:8000/stream"></audio>
+            <div class="audio-controls">
+               <div class="audio-buttons">
+                  <button class="audio-play" onclick="audioPlay()">Play</button>
+                  <button class="audio-pause" onclick="audioPause()">Pause</button>
+               </div>
+               <div class="audio-volume-container">
+                  <input id="audio-vol" class="audio-volume" onchange="changeVolume(this.value)"
+                         type="range" min="0" max="1" step="0.05" value="0.5">
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </body>
+</html>

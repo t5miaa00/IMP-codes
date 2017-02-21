@@ -1,0 +1,121 @@
+/* TODO: Add css reset lol! */
+body
+{
+   font-family: sans-serif;
+   margin-top: 0;
+   margin-bottom: 0;
+   background-color: #454545;
+   background-image: url('./background.jpg');
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.success
+{
+   color: green;
+   text-shadow: 0 0 4px lightgreen;
+}
+.error
+{
+   color: red;
+   text-shadow: 0 0 4px pink;
+}
+.answers li
+{
+   background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+   border-radius: 5px 5px 0 0;
+   padding: 0.5em
+}
+.answers p
+{
+   font-style: italic;
+}
+.answers p::before
+{
+   content: "≫ ";
+}
+.container
+{
+   background-color: rgba(255,255,255,0.8);
+   background-image: url('./background-blur.jpg');
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 90%;
+   margin: auto;
+   padding: 0.5em;
+   min-height: calc(100vh - 1em);
+   box-shadow: 0 0 10px 0 black;
+   transition: all 1s;
+}
+.inputbox
+{
+   width: 50%;
+   margin: auto;
+   margin-bottom: 1em;
+   display: flex;
+   transition: all 1s;
+   box-shadow: 0 1em 1em -0.8em black;
+   border-radius: 2em;
+}
+.inputbox input, .inputbox button
+{
+   border: 0;
+   color: black;
+   padding: 1em;
+}
+.inputbox input
+{
+   background: white;
+   flex: 4;
+   border: 1px solid #eee;
+   border-radius: 2em 0 0 2em;
+}
+.inputbox button
+{
+   width: 70px;
+   background: #eee;
+   background: linear-gradient(0deg, #eee, #ddd);
+   border-radius: 0 2em 2em 0;
+}
+.inputbox button:hover
+{
+   background: #ddd;
+   background: linear-gradient(0deg, #ddd, #ccc);
+}
+.inputbox button.btn-positive
+{
+   color: white;
+   background: #00bf1b;
+   background: linear-gradient(0deg, #00bf1b, #00a617);
+}
+.inputbox button.btn-positive:hover
+{
+   background: #00a617;
+   background: linear-gradient(0deg, #00a617, #008c14);
+}
+#image-feed
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.flickr-image
+{
+   width: 15em;
+   height: 15em;
+   margin: 0.25em;
+   object-fit: cover; /* NOTE: This DOES NOT work on IE or Edge at this moment */
+   box-shadow: 0 0.75em 1em -1em black;
+}
+@media only screen and (max-width: 768px)
+{
+   .container
+   {
+      width: 95%;
+   }
+   .inputbox
+   {
+      width: 80%;
+   }
+}

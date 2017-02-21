@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+
+      <link rel="stylesheet" href="main.css">
+      <script src="http://code.jquery.com/jquery-3.1.1.js"
+              integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+              crossorigin="anonymous" charset="utf-8"></script>
+      <script src="main.js" charset="utf-8"></script>
+
+      <title>jQuery & ajax</title>
+   </head>
+   <body>
+      <div class="container">
+
+         <h1>Assigment 5</h1>
+         <h2>1. Getting familiar with jQuery</h2>
+         <ol class="answers">
+            <li>What you can do with the jQuery?</li>
+            <p>The same stuff with vanilla JS, but writing less code.</p>
+
+            <li>How it can help you as web developer?</li>
+            <p>By making JS code writing faster. Though writing with jQuery is faster and therefore more efficent to write than regular JS.</p>
+
+            <li>If you think our earlier participant list app, in what kind of issues you could use jQuery?</li>
+            <p>Nothing I cannot use vanilla JS for.</p>
+
+            <li>What are CDNs? What kind of benefits you get if you use them?</li>
+            <p>CDN means "<b>C</b>ontent <b>D</b>elivery <b>N</b>etwork" and they, in jQuery's case, store the jQuery script in a server which uses caching, so if some other site uses the same CDN, the load times will be a lot smaller as the script is already loaded in to the computer.</p>
+         </ol>
+
+         <div> <!-- LocalStorage -->
+            <h2>2. More jQuery</h2>
+            <div class="textbox">
+               <input class="inputbox" type="text" id="name" value="" placeholder="Type a name...">
+            </div>
+            <div class="buttonbox">
+               <button class="submitbtn" id="savename" onclick="addPerson()">Save</button>
+            </div>
+            <div id="persons-list"></div>
+         </div>
+
+         <div><!-- Ajax -->
+            <h2>3. Ajax:</h2>
+            <h3>PersonsList:</h3>
+            <div id="ajax-container"></div>
+            <button onclick="listAjax()">Load with AJAX</button>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,115 @@
+/* TODO: Add css reset lol! */
+body
+{
+   font-family: sans-serif;
+   margin-top: 0;
+   margin-bottom: 0;
+   background-color: #454545;
+   background-image: url('./background.jpg');
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.success
+{
+   color: green;
+   text-shadow: 0 0 4px lightgreen;
+}
+.error
+{
+   color: red;
+}
+.container
+{
+   background-color: rgba(255,255,255,0.8);
+   background-image: url('./background-blur.jpg');
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 80%;
+   margin: auto;
+   padding: 0.5em;
+   min-height: calc(100vh - 1em);
+   box-shadow: 0 0 10px 0 black;
+}
+.buttonbox
+{
+   width: 20%;
+   float: right;
+}
+.textbox
+{
+   width: 80%;
+   float: left;
+}
+.persons
+{
+   width: 20%;
+   float: left;
+   word-wrap: break-word;
+}
+.persons:last-child
+{
+   width: auto;
+   float: none;
+}
+.audio-controls
+{
+   width: 410px;
+   margin: auto;
+   background: white; /* Fallback background color */
+   background: linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8));
+   padding: 1em 0 1em 0;
+   box-shadow: 0 1em 1em -1em black;
+}
+.audio-buttons
+{
+   width: 80%;
+   margin: auto;
+   margin-top: 1em;
+}
+.audio-volume-container
+{
+   width: 90%;
+   margin: auto;
+}
+.audio-volume
+{
+   width: 100%;
+   margin: 0;
+   margin-top: 1em;
+   padding: 0;
+}
+.audio-play, .audio-pause
+{
+   width: 45%;
+   height: 2em;
+   margin: auto;
+   font-size: 2em;
+}
+.audio-play
+{
+   float: left;
+}
+.audio-pause
+{
+   float: right;
+}
+#chatbox
+{
+   max-height: 20em;
+   overflow-y: scroll;
+   border: 1px solid #454545;
+   border-bottom: none;
+   padding: 0.5em;
+   background-color: white;
+   box-shadow: inset 0 1em 1em -1em black;
+}
+#chatbox p
+{
+   margin-top: 0;
+}
+.submitbtn, .inputbox
+{
+   width: 100%;
+}
