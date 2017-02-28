@@ -1,6 +1,6 @@
 // Public variables
 var connection = new WebSocket("ws://obscure-waters-98157.herokuapp.com");
-var audioElement, audioVol
+var audioElement, audioVol, chatbox
 
 // Init script
 window.onload = function()
@@ -8,6 +8,7 @@ window.onload = function()
    // initializing the variables
    audioVol = document.getElementById('audio-vol');
    audioElement = document.getElementById('audio');
+   chatbox = document.getElementById('chatbox');
 
    initPersons();
    initVolume();
@@ -35,7 +36,6 @@ connection.onerror = function(error)
 // Recieving messages
 connection.onmessage = function(message)
 {
-   var chatbox = document.getElementById('chatbox');
 
    chatbox.insertAdjacentHTML( "afterbegin", "<p>" + message.data + "</p>");
    console.log(message.data);
